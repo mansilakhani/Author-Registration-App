@@ -1,16 +1,13 @@
-# author_registeration_app
+# Author Registeration App
 
-A new Flutter project.
+## Screenshot
+<img src="https://user-images.githubusercontent.com/111499824/202419720-3e92ef23-9084-4aed-82c6-5c0a5e701a8f.jpg" width="250" height="500" />
+<img src="https://user-images.githubusercontent.com/111499824/202419745-2404eb09-ca6c-40b8-92f7-baf427643a55.jpg" width="250" height="500" />
+<img src="https://user-images.githubusercontent.com/111499824/202419806-19fc0149-d9d2-4a10-b8ed-e5691c1e0344.jpg" width="250" height="500" />
+<img src="https://user-images.githubusercontent.com/111499824/202419850-773ae315-9f69-4327-98cf-072370b39c30.jpg" width="250" height="500" />
 
-## Getting Started
+### GIF
+https://user-images.githubusercontent.com/111499824/202419549-5140b8ae-ba6c-48b2-9f61-904d4dbb828d.mp4
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
