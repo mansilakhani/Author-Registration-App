@@ -1,4 +1,4 @@
-# Author Registeration App
+# Author Registration App
 
 ## Screenshot
 <img src="https://user-images.githubusercontent.com/111499824/202419720-3e92ef23-9084-4aed-82c6-5c0a5e701a8f.jpg" width="250" height="500" />
