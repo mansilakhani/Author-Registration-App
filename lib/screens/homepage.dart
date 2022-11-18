@@ -25,8 +25,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
    return Scaffold(
-     backgroundColor: Colors.red.shade100,
-      appBar: AppBar(
+    backgroundColor: Colors.red.shade100,
+    appBar: AppBar(
         elevation: 0,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -68,7 +68,7 @@ class _HomePageState extends State<HomePage> {
             ),
             Expanded(
               child: StreamBuilder<QuerySnapshot>(
-                  stream:
+               stream:
                       CloudFirestoreHelper.cloudFirestoreHelper.selectRecord(),
                   builder: (BuildContext context,
                       AsyncSnapshot<QuerySnapshot> snapshot) {
@@ -90,6 +90,7 @@ class _HomePageState extends State<HomePage> {
                           // childAspectRatio:
                           //     MediaQuery.of(context).size.width),
                           shrinkWrap: true,
+                         
                           itemCount: list.length,
                           itemBuilder: (context, i) {
                             return Container(
@@ -105,7 +106,7 @@ class _HomePageState extends State<HomePage> {
                                   Center(
                                     child: Image.network(
                                       '${list[i]['image']}',
-                                      scale: 30,
+                                      scale: 10,
                                     ),
                                   ),
                                   Text(
@@ -188,13 +189,23 @@ class _HomePageState extends State<HomePage> {
       context: context,
       builder: (context) {
         return AlertDialog(
+          backgroundColor: Colors.red.shade100,
           content: Form(
             key: updateformkey,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
                 const Center(
-                  child: Text("Update"),
+                  child: Text(
+                    "Update Details",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
                 ),
                 TextFormField(
                   controller: auth_nameController,
@@ -206,8 +217,12 @@ class _HomePageState extends State<HomePage> {
                   },
                   decoration: const InputDecoration(
                     hintText: "Title",
-                    label: Text("Enter Your title"),
+                    border: OutlineInputBorder(),
+                    label: Text("author_name"),
                   ),
+                ),
+                SizedBox(
+                  height: 15,
                 ),
                 TextFormField(
                   controller: content_Controller,
@@ -219,13 +234,20 @@ class _HomePageState extends State<HomePage> {
                   },
                   decoration: const InputDecoration(
                     hintText: "Context",
-                    label: Text("Enter Your context"),
+                    border: OutlineInputBorder(),
+                    label: Text("content"),
                   ),
+                ),
+                SizedBox(
+                  height: 25,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.black,
+                      ),
                       onPressed: () async {
                         Navigator.of(context).pop();
                         if (updateformkey.currentState!.validate()) {
